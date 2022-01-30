@@ -1,38 +1,107 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap');
+@font-face {
+  font-family: NotoColorEmojiLimited;
+  unicode-range: U+1F1E6-1F1FF;
+  src: url(https://raw.githack.com/googlefonts/noto-emoji/main/fonts/NotoColorEmoji.ttf);
+}
+
+.main-container {
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.secondary-container {
+  background-color: #f7ffff;
+}
+
+.country-container {
+  border: 1px solid #8c8c8c;
+  border-radius: 5px;
   text-align: center;
+  background-color: #e8e8e8;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.country-container:hover {
+  background-color: #d4ded1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.country-name {
+  font-weight: bolder;
+  font-family: Montserrat;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.country-link {
+  text-decoration: none;
+  color: inherit;
 }
 
-.App-link {
-  color: #61dafb;
+.country-flag {
+  font-family: 'NotoColorEmojiLimited', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 50pt;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.country-flag-big {
+  font-family: 'NotoColorEmojiLimited', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 100pt;
+}
+
+.container-country-items {
+  height: 450px;
+  overflow: auto;
+}
+
+.container-country-items::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.container-country-items::-webkit-scrollbar-track {
+  background: #cecece;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+.container-country-items::-webkit-scrollbar-thumb {
+  background-color: #8b8c8c;
+  border-radius: 5px;
+}
+
+.container-country-items::-webkit-scrollbar-thumb:hover {
+  background: #068478;
+}
+
+.country-card-title {
+  font-family: Montserrat;
+  font-weight: 600;
+}
+
+.table-item-label {
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+.table-item-value {
+  font-family: Montserrat;
+  font-weight: 300;
+}
+
+.country-card {
+  min-width: 650px;
+  margin: auto;
+}
+
+.loading-text {
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+.btn-home-globe {
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }
